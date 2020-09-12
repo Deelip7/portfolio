@@ -55,9 +55,49 @@ body {
 .--navright {
   padding: 0 0px 5px 30px;
 }
+/* ------- Section ------- */
+h1,
+h2 {
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+h2 {
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+  width: 11rem;
+  margin: auto;
+}
+.emoji {
+  font-size: 1.5rem;
+}
+section {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  min-height: 50vh;
+
+  /* border: 1px solid rgb(168, 168, 168); */
+}
+
 /* ------- About me Section ------- */
+.about-content {
+  margin: 0 auto;
+  padding: 5rem;
+  box-shadow: 0.1em 0.5rem 0.9rem 0.1rem rgb(230, 230, 230);
+}
+.about-content > p {
+  max-width: 800px;
+  padding-bottom: 1rem;
+}
 
 /* ------- Project Section ------- */
+#projects {
+  /* background-image: url("assets/3.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 30%; */
+}
 
 /* ------- Tools Section ------- */
 #tools {
