@@ -19,22 +19,28 @@ body {
   letter-spacing: 1px;
 }
 
-.navbar-default {
+#helloWorld {
+  margin: 0 auto;
+  text-align: center;
+}
+/* ------- Header ------- */
+
+.navbar {
+  font-size: 1.2rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px;
+  padding: 20px;
 }
 
-.logo {
-  width: 105px;
-  height: 115.5px;
+.navbar__logo {
+  width: 5rem;
+  margin: 0 2rem;
 }
 
-.links a {
-  padding: 0 10px;
-  padding-bottom: 5px;
+.navbar__nav {
+  display: inline-block;
   margin: 10px 20px;
   color: inherit;
   text-decoration: none;
@@ -42,7 +48,35 @@ body {
   font-weight: 100;
 }
 
-.active {
-  font-weight: 800 !important;
-  color: #333;
+.--navleft {
+  padding: 0 30px 5px 0;
+}
+
+.--navright {
+  padding: 0 0px 5px 30px;
+}
+/* ------- About me Section ------- */
+
+/* ------- Project Section ------- */
+
+/* ------- Tools Section ------- */
+#tools {
+  /* max-width: 100%; */
+}
+
+.skill {
+  display: flex;
+  margin: 0 auto;
+  max-width: 600px;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill__icon {
+  width: 8rem;
+}
+/* ------- Contact Section ------- */
+.contact-info__icons img {
+  width: 8rem;
 }

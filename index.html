@@ -9,16 +9,88 @@
   </head>
   <body>
     <div id="helloWorld">
-      <nav class="navbar-default">
-        <ul></ul>
-        <ul class="navbar-default links">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">Projects</a></li>
-          <li class="navbar-default logo"><img src="assets/logo.png" alt="" /></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Resume</a></li>
-        </ul>
-      </nav>
+      <header>
+        <nav>
+          <ul class="navbar">
+            <li><a href="#" class="navbar__nav --navleft">Home</a></li>
+            <li><a href="#" class="navbar__nav --navleft">Projects</a></li>
+            <li><img src="assets/logo.png" class="navbar__logo" alt="" /></li>
+            <li><a href="#" class="navbar__nav --navright">Contact</a></li>
+            <li><a href="#" class="navbar__nav --navright">Resume</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="about-me">
+          <h1>Hello, I’m Theelipan</h1>
+          <p>I am a Front-End Developer I have a passion for developing user-friendly, well-designed, responsive and accessible web applications & websites.</p>
+          <p>I'm always ready to challenge myself and explore new areas of work. I never stop learning and for me, each new project is another adventure.</p>
+        </section>
+        <section id="projects">
+          <header>
+            <h2>Projects</h2>
+          </header>
+          <div class="card">
+            <div class="card__img">
+              <img src="" alt="" />
+            </div>
+            <div class="card__title">Recipe Finder</div>
+            <div class="card__subtitle">Simple app to find and save recpies. API from themealdb.com</div>
+            <div class="card__btn">
+              <a id="btn__demo" href="https://practical-archimedes-a61091.netlify.app/">Demo</a>
+              <a id="btn__github">GitHub</a>
+            </div>
+            <div class="card__tools"></div>
+          </div>
+        </section>
+        <section id="tools">
+          <header>
+            <h2>Tools</h2>
+          </header>
+          <div class="skill">
+            <div class="skill__icon"><img src="/assets/icons/javascript-original.svg" alt="" /></div>
+            <div class="skill__icon"><img src="/assets/icons/javascript-original.svg" alt="" /></div>
+            <div class="skill__icon"><img src="/assets/icons/javascript-original.svg" alt="" /></div>
+            <div class="skill__icon"><img src="/assets/icons/javascript-original.svg" alt="" /></div>
+            <div class="skill__icon"><img src="/assets/icons/javascript-original.svg" alt="" /></div>
+            <div class="skill__icon"><img src="/assets/icons/javascript-original.svg" alt="" /></div>
+          </div>
+        </section>
+        <section id="contact-me">
+          <header>
+            <h2>Contact</h2>
+          </header>
+          <div class="contact">
+            <h3>GET IN TOUCH</h3>
+            <div class="contact-info">
+              <div class="contact-info__email">
+                <a href="">Theelipan@gmail.com</a>
+              </div>
+              <div class="contact-info__location">
+                <p>Middletown, Connecticut</p>
+              </div>
+              <div class="contact-info">
+                <div class="contact-info__icons">
+                  <a id="btn__demo" href="https://github.com/Deelip7">
+                    <img src="/assets/icons/github-original-wordmark.svg" alt="" />
+                  </a>
+                </div>
+                <div class="contact-info__icons">
+                  <a id="btn__demo" href="https://www.linkedin.com/in/theelipan-prabakar-096437199/">
+                    <img src="/assets/icons/linkedin-original-wordmark.svg" alt="" />
+                  </a>
+                </div>
+                <div class="contact-info__icons">
+                  <a id="btn__demo" href="https://codepen.io/deelip7">
+                    <img src="/assets/icons/codepen-wordmark-display-inside-black@10x.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer></footer>
     </div>
   </body>
 </html>
