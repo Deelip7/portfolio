@@ -70,7 +70,7 @@ h2 {
   border-bottom: 1px solid #333;
   padding-bottom: 0.5rem;
   width: 11rem;
-  margin: 4rem auto;
+  margin: 5rem auto;
 }
 
 h3 {
@@ -86,7 +86,7 @@ section {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  /* min-height: 80vh; */
+  min-height: 80vh;
 }
 
 /* ------- About me Section ------- */
@@ -212,30 +212,58 @@ section {
 }
 
 /* ------- Tools Section ------- */
-#tools {
-  /* max-width: 100%; */
-  margin-top: 150px;
-}
+/* #tools {
+  margin-top: 150px; /* ----------------4rem-------------------- FIX
+} */
 
 .skill {
   display: flex;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 1000px;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
 
-.skill__icon img {
-  max-width: 600px;
-  margin: 0 auto;
+/* ------- Hexagon Tools Icon ------- */
+.hexagon-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  filter: drop-shadow(1px 6px 10px rgba(119, 119, 119, 0.24));
 }
+
+.hexagon-wrapper .hexagon {
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  transition-delay: 0s !important;
+  -webkit-transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+  -moz-transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition-delay: 0s;
+  margin: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+.hexagon:hover {
+  box-shadow: 0px 32px 60px rgba(0, 0, 0, 0.16);
+  transform: translate(0px, -5px);
+  transition-delay: 0s !important;
+  -webkit-transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+  -moz-transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition-delay: 0s;
+}
+
 /* ------- Contact Section ------- */
 .contact {
+  color: #525252;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-self: center;
-  margin: 3rem;
+  /* margin: 3rem; */
   max-width: 800px;
   padding: 1rem 5rem;
   border-radius: 1rem;
@@ -243,19 +271,14 @@ section {
   -webkit-transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
   -moz-transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+  line-height: 3rem;
 }
 .contact-info {
   font-size: 1.1rem;
-  margin-top: 1rem;
 }
 
 .contact-info a {
   color: #525252;
-}
-
-.contact-info > div {
-  color: #525252;
-  margin-bottom: 0.5rem;
 }
 
 .contact-icon img {
@@ -270,11 +293,16 @@ footer {
   height: 10px;
   background: linear-gradient(to right, rgb(0, 255, 242) 25%, rgb(255, 38, 0) 25% 50%, rgb(0, 238, 255) 50% 75%, rgb(251, 255, 0) 75%);
 }
-/* ------- footer ------- */
+
+/* ------- @media  ------- */
 
 @media only screen and (max-width: 650px) {
   section {
     min-height: 100vh;
+  }
+
+  section:nth-child(n + 3) {
+    min-height: 80vh;
   }
   .navbar__logo {
     display: none;
@@ -318,6 +346,14 @@ footer {
 
   #contact-me h2 {
     display: none;
+  }
+  .skill {
+    max-width: 600px;
+  }
+  .hexagon-wrapper .hexagon {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
   }
 
   footer {
