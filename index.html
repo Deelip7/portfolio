@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>Theelipan Prabakar</title>
   </head>
@@ -47,7 +48,7 @@
           <!-- ---------------------------- Card ---------------------------- -->
 
           <div class="card-container">
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-duration="1200">
               <div class="card__img">
                 <img src="assets/860.png" alt="" />
               </div>
@@ -60,7 +61,7 @@
               <div class="card__tools"></div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-duration="500" data-aos-easing="linear">
               <div class="card__img">
                 <img src="assets/860.png" alt="" />
               </div>
@@ -73,7 +74,7 @@
               <div class="card__tools"></div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="fade-up">
               <div class="card__img">
                 <img src="assets/860.png" alt="" />
               </div>
@@ -86,7 +87,7 @@
               <div class="card__tools"></div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-duration="500" data-aos-easing="linear">
               <div class="card__img">
                 <img src="assets/860.png" alt="" />
               </div>
@@ -99,7 +100,7 @@
               <div class="card__tools"></div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-duration="1200">
               <div class="card__img">
                 <img src="assets/860.png" alt="" />
               </div>
@@ -122,22 +123,22 @@
           <div class="skill">
             <div class="skill__icon">
               <div class="hexagon-wrapper">
-                <img class="hexagon" src="assets/iconsHex/Javascript.svg" />
-                <img class="hexagon" src="assets/iconsHex/NodeJs.svg" />
-                <img class="hexagon" src="assets/iconsHex/Mango DB.svg" />
-                <img class="hexagon" src="assets/iconsHex/HTML.svg" />
-                <img class="hexagon" src="assets/iconsHex/CSS.svg" />
-                <img class="hexagon" src="assets/iconsHex/Bootstrap.svg" />
-                <img class="hexagon" src="assets/iconsHex/Git.svg" />
-                <img class="hexagon" src="assets/iconsHex/React.svg" />
-                <img class="hexagon" src="assets/iconsHex/Figma.svg" />
+                <img class="hexagon" src="assets/iconsHex/Javascript.svg" data-aos="fade-up" />
+                <img class="hexagon" src="assets/iconsHex/NodeJs.svg" data-aos="fade-up" data-aos-duration="850" />
+                <img class="hexagon" src="assets/iconsHex/Mango DB.svg" data-aos="fade-up" />
+                <img class="hexagon" src="assets/iconsHex/HTML.svg" data-aos="fade-up" data-aos-duration="850" />
+                <img class="hexagon" src="assets/iconsHex/CSS.svg" data-aos="fade-up" />
+                <img class="hexagon" src="assets/iconsHex/Bootstrap.svg" data-aos="fade-up" data-aos-duration="850" />
+                <img class="hexagon" src="assets/iconsHex/Git.svg" data-aos="fade-up" />
+                <img class="hexagon" src="assets/iconsHex/React.svg" data-aos="fade-up" data-aos-duration="850" />
+                <img class="hexagon" src="assets/iconsHex/Figma.svg" data-aos="fade-up" />
               </div>
             </div>
           </div>
         </section>
 
         <!-- ---------------------------- Contact ---------------------------- -->
-        <section id="contact-me">
+        <section id="contact-me" data-aos="fade-up">
           <header>
             <h2>Contact</h2>
           </header>
@@ -166,5 +167,13 @@
       </main>
       <footer></footer>
     </div>
+    <!------------------------------ Animate On Scroll Library ------------------------------>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>
