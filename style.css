@@ -285,14 +285,13 @@ section {
 .contact-info {
   font-size: 1.1rem;
 }
-.contact-info__email img,
-.contact-info__location img {
+.contact-info img {
   position: relative;
   top: 0.3rem;
   /* margin-right: 1rem; */
 }
 
-.contact-info a {
+.contact-info__email {
   color: #525252;
   padding: 0.5rem 1rem;
   border-radius: 6px;
@@ -303,14 +302,33 @@ section {
   padding: 0.5rem 1rem;
 }
 
-.contact-info a:hover {
-  box-shadow: 0px 32px 60px rgba(0, 0, 0, 0.16);
+.contact-info__email:hover {
+  border: 1px solid #bbbbbb81;
   transform: translate(0px, -12px) !important;
   transition-delay: 0s !important;
   -webkit-transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
   -moz-transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
   transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
   transition-delay: 0s;
+}
+
+.contact-info__email:after {
+  position: relative;
+  color: #333;
+  content: "»";
+  opacity: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.contact-info__email:hover {
+  padding-right: 2rem;
+  /* padding-left: 10px; */
+}
+
+.contact-info__email:hover:after {
+  opacity: 1;
+  left: 10px;
 }
 
 .hexagon-wrapper-contact .hexagon-contact {
@@ -327,6 +345,7 @@ section {
   transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
   transition-delay: 0s;
 }
+
 .hexagon-contact:hover {
   box-shadow: 0px 32px 60px rgba(0, 0, 0, 0.16);
   transform: translate(0px, -5px);
