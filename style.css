@@ -157,7 +157,7 @@ section {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-self: center;
   max-width: 450px;
   height: 480px;
@@ -394,7 +394,7 @@ section {
   margin: -10px 0 0 -10px;
   border-left: none;
   border-top: none;
-  border-right: 1px #333 solid;
+  border-right: 2px #333 solid;
   border-bottom: 1px #333 solid;
   animation-duration: 2s;
   animation-iteration-count: infinite;
