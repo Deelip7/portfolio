@@ -17,6 +17,7 @@ body {
   font-size: 1rem;
   letter-spacing: 1px;
   background-color: #fafafa;
+  /* background: #0b1d2a; */
 }
 
 /* ------- Header ------- */
@@ -86,7 +87,7 @@ section {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  min-height: 80vh;
+  min-height: 75vh;
 }
 
 /* ------- About me Section ------- */
@@ -133,6 +134,10 @@ section {
 }
 
 /* ------- Project Section ------- */
+#projects {
+  padding-top: 5rem;
+}
+
 .card-container {
   display: flex;
   flex-flow: row wrap;
@@ -399,5 +404,53 @@ footer {
   }
   .raindow {
     height: 2px;
+  }
+}
+/*------- Arrow -------*/
+
+.arrow {
+  position: relative;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 50px 0 0 -10px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #797979 solid;
+  border-bottom: 2px #797979 solid;
+}
+
+.arrow:before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #333 solid;
+  border-bottom: 1px #333 solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(30px, 30px);
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html,
+  body {
+    scroll-behavior: smooth;
   }
 }
