@@ -37,7 +37,7 @@ body {
   position: absolute;
   width: 4.5rem;
   left: 10rem;
-  top: 0.7rem;
+  top: 0.85rem;
 }
 
 .navbar__nav {
@@ -152,6 +152,7 @@ section {
   flex-flow: row wrap;
   justify-content: center;
   align-self: center;
+  max-width: 1450px;
 }
 
 .card {
@@ -184,16 +185,16 @@ section {
 }
 
 .card__title {
-  font-size: 1.5rem;
-  color: #555555;
+  font-size: 1.3rem;
+  color: #6b6b6b;
   margin-bottom: 0.5rem;
   text-align: left;
   font-weight: 900;
 }
 
 .card__subtitle {
-  font-size: 0.9rem;
-  color: #868686;
+  font-size: 0.8rem;
+  color: #5e5e5e;
   margin-bottom: 2rem;
   line-height: 22px;
   text-align: left;
@@ -206,7 +207,7 @@ section {
 
 .card__btn > a {
   font-size: 0.9rem;
-  color: #868686;
+  color: #6b6b6b;
   text-align: left;
   margin-right: 1rem;
   border: 1px solid #86868681;
@@ -466,16 +467,19 @@ footer {
   .about-content > img {
     width: 40%;
   }
+
   .card {
     height: 480px;
     padding: 2rem;
-    margin: 0.8rem 1rem;
+    margin: 1.5rem 2.5rem;
   }
+
   .card__raindow {
     /* left: -13.5px; */
     top: 33px;
     /* width: 110%; */
   }
+
   .card__btn,
   .card__title,
   .card__subtitle {
