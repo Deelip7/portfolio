@@ -109,7 +109,7 @@ section {
 }
 
 .about-content > p {
-  max-width: 800px;
+  max-width: 720px;
   line-height: 2.5rem;
 }
 
@@ -152,20 +152,17 @@ section {
   flex-flow: row wrap;
   justify-content: center;
   align-self: center;
-  max-width: 1450px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-self: center;
   max-width: 450px;
-  height: 480px;
-  padding: 3rem 0.8rem; /*------------------ 3rem 1rem*/
-  margin: 2rem 1rem;
-  border-radius: 16px 16px 10px 10px; /*------------------ 16px*/
-  /* border-radius: 16px; ------------------------------------------------------------------------------------- FIX */
+  height: 500px;
+  margin: 2rem 2rem;
+  border-radius: 16px 16px 10px 10px;
   box-shadow: 0 2px 44px 0 rgba(0, 0, 0, 0.14);
   -webkit-transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
   -moz-transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
@@ -173,22 +170,26 @@ section {
 }
 
 .card__img {
+  background-color: rgb(255, 255, 255);
   display: block;
-  width: 15rem;
-  margin-bottom: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  height: 60%;
+  border-radius: 16px 16px 0px 0px;
 }
 .card__img img {
+  border-radius: 16px 16px 0px 0px;
   width: 100%;
+  height: 100%;
+}
+
+.card__text {
+  padding: 1rem 2rem;
+  text-align: left;
 }
 
 .card__title {
   font-size: 1.3rem;
   color: #6b6b6b;
   margin-bottom: 0.5rem;
-  text-align: left;
   font-weight: 900;
 }
 
@@ -197,18 +198,16 @@ section {
   color: #5e5e5e;
   margin-bottom: 2rem;
   line-height: 22px;
-  text-align: left;
-}
-.card__btn,
-.card__title,
-.card__subtitle {
-  padding: 0 2rem;
+  font-weight: 100;
 }
 
+.card__btn {
+  margin-bottom: 1rem;
+}
 .card__btn > a {
+  font-weight: 100;
   font-size: 0.9rem;
   color: #6b6b6b;
-  text-align: left;
   margin-right: 1rem;
   border: 1px solid #86868681;
   padding: 0.5rem 1rem;
@@ -230,10 +229,8 @@ section {
 }
 
 .card__raindow {
-  position: relative;
-  /* left: -25px; */
-  top: 49px;
-  width: 100%;
+  align-self: center;
+  width: 94%;
   height: 1px;
   background: linear-gradient(to right, rgb(0, 255, 242) 25%, rgb(255, 38, 0) 25% 50%, rgb(0, 238, 255) 50% 75%, rgb(255, 187, 0) 75%);
 }
@@ -333,7 +330,7 @@ section {
   left: 10px;
 }
 
-.hexagon-wrapper-contact .hexagon-contact {
+.contact-icon-wrapper .contact-icon {
   width: 95px;
   margin-top: 2rem;
   margin-right: 1rem;
@@ -348,7 +345,7 @@ section {
   transition-delay: 0s;
 }
 
-.hexagon-contact:hover {
+.contact-icon:hover {
   box-shadow: 0px 32px 60px rgba(0, 0, 0, 0.16);
   transform: translate(0px, -5px);
   transition-delay: 0s !important;
@@ -359,8 +356,8 @@ section {
 }
 
 .contact-info,
-.header2,
-.hexagon-wrapper-contact {
+.contact-header,
+.contact-icon-wrapper {
   margin: 0 5rem;
 }
 
@@ -437,7 +434,8 @@ footer {
     scroll-behavior: smooth;
   }
 }
-@media only screen and (max-width: 650px) {
+
+@media only screen and (max-width: 750px) {
   section {
     min-height: 100vh;
   }
@@ -450,7 +448,8 @@ footer {
   }
 
   .navbar {
-    display: none;
+    /* display: none; */
+    font-size: 0.9rem;
     justify-content: center;
     box-shadow: 0 2px 10px 0 rgba(201, 201, 201, 0.527);
     -webkit-transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
@@ -460,30 +459,16 @@ footer {
 
   .about-content {
     margin: 0 auto;
-
-    padding: 1rem;
-  }
-
-  .about-content > img {
-    width: 40%;
+    padding: 2rem;
+    font-size: 0.9rem;
   }
 
   .card {
-    height: 480px;
-    padding: 2rem;
-    margin: 1.5rem;
+    margin: 1rem 1.5rem;
   }
 
-  .card__raindow {
-    /* left: -13.5px; */
-    top: 33px;
-    /* width: 110%; */
-  }
-
-  .card__btn,
-  .card__title,
-  .card__subtitle {
-    padding: 0.5rem;
+  .card__text {
+    padding: 0.5rem 2rem;
   }
 
   .contact {
@@ -498,40 +483,33 @@ footer {
   }
 
   .contact-info,
-  .header2,
+  .contact-header,
   .hexagon-wrapper-contact {
     margin: 0rem;
   }
+
+  #contact-me h2,
   .contact__raindow {
     display: none;
   }
 
-  #contact-me h2 {
-    display: none;
-  }
-
   .hexagon-wrapper .hexagon {
-    margin: 10px;
-    width: 100px;
+    margin: 0rem 0.5rem;
+    width: 6rem;
   }
 
-  .hexagon-wrapper-contact .hexagon-contact {
-    width: 80px;
-    margin-top: 2rem;
+  .contact-icon-wrapper {
+    margin: 0rem;
+  }
+  .contact-icon-wrapper .contact-icon {
+    width: 90px;
     margin-right: 0.5rem;
-    padding: 0.5rem 1.5rem;
   }
 
   footer {
     margin-top: 100px;
   }
 
-  .footer-emoji {
-    width: 70px;
-    margin-left: auto;
-    margin-right: 0px;
-    font-size: 1.2rem;
-  }
   .raindow {
     height: 2px;
   }
