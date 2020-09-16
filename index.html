@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/assets/Logo6.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.png" type="image/x-icon" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>Theelipan Prabakar</title>
@@ -12,16 +12,10 @@
     <div id="helloWorld">
       <header>
         <nav>
-          <!-- <img src="assets/logo2.svg" class="navbar__logo" alt="" /> -->
           <ul class="navbar">
-            <!-- <img src="assets/logo1.svg" class="navbar__logo" alt="" /> -->
-            <!-- <img src="assets/logo4.svg" class="navbar__logo" alt="" /> -->
-            <!-- <img src="assets/logo5.svg" class="navbar__logo" alt="" /> -->
-            <!-- <img src="assets/logo6.svg" class="navbar__logo" alt="" /> -->
-            <!-- <img src="assets/logo7.svg" class="navbar__logo" alt="" /> -->
-            <img src="assets/iconsHex/Group 2.png" class="navbar__logo" alt="" />
-
-            <!-- <li><a href="#about-me" class="navbar__nav --navleft">About</a></li> -->
+            <li>
+              <img src="assets/iconsHex/nav-logo.png" class="navbar__logo" alt="" />
+            </li>
             <li><a href="#projects" class="navbar__nav --navleft">Projects</a></li>
             <li><a href="#contact-me" class="navbar__nav --navright --close">Contact</a></li>
             <li><a href="#" class="navbar__nav --navright">Resume</a></li>
@@ -33,7 +27,7 @@
         <!-- ---------------------------- About me ---------------------------- -->
         <section id="about-me" data-aos-offset="200" data-aos-duration="1200" data-aos="fade-in">
           <div class="about-content">
-            <img src="/assets/iconsHex/Hex-Profile.png" alt="" />
+            <img src="/assets/iconsHex/hex-profile.png" alt="" />
             <h1>Hello, I’m Theelipan</h1>
             <p>
               I have a passion for developing user-friendly, responsive and accessible web applications I'm always ready to challenge myself and explore new areas of work. I never stop learning and
@@ -52,92 +46,80 @@
           </header>
           <div class="card-container">
             <div class="card">
-              <div class="card__img">
-                <img src="/Screenshot_2020-09-15 Flat browser Safari on coral mockup MockupsJar.png" alt="" />
-              </div>
+              <div class="card__img" style="background-image: url(assets/card-mockup/recipe-mockup.png)"></div>
               <div class="card__text">
-                <div class="card__title"><h4>Recipe Finder</h4></div>
+                <div class="card__title">Recipe Finder</div>
                 <div class="card__subtitle">
                   <p>App that allow you to look up and save your favorite recipes. API provided by themealdb.com</p>
                 </div>
                 <div class="card__btn">
-                  <a id="btn__demo" href="https://practical-archimedes-a61091.netlify.app/">Demo</a>
-                  <a id="btn__github" href="https://github.com/Deelip7/RecipesFinder">GitHub</a>
+                  <a class="btn__demo" href="https://practical-archimedes-a61091.netlify.app/">Demo</a>
+                  <a class="btn__github" href="https://github.com/Deelip7/RecipesFinder">GitHub</a>
                 </div>
               </div>
               <div class="card__raindow"></div>
             </div>
 
             <div class="card" data-aos="fade-up" data-aos-duration="1200">
-              <div class="card__img">
-                <img src="Screenshot_2020-09-15 Free Safari Web Browser 2 Trans mockup MockupsJar.png" alt="" />
-              </div>
+              <div class="card__img" style="background-image: url(assets/card-mockup/Userlogin-mockup.png)"></div>
               <div class="card__text">
                 <div class="card__title">User login</div>
                 <div class="card__subtitle">User register and sign in project using Node.js. Deploy to Heroku</div>
                 <div class="card__btn">
-                  <a id="btn__demo" href="https://powerful-lake-53040.herokuapp.com/">Demo</a>
-                  <a id="btn__github" href="https://github.com/Deelip7/userSignIn">GitHub</a>
+                  <a class="btn__demo" href="https://powerful-lake-53040.herokuapp.com/">Demo</a>
+                  <a class="btn__github" href="https://github.com/Deelip7/userSignIn">GitHub</a>
                 </div>
               </div>
               <div class="card__raindow"></div>
             </div>
 
             <div class="card" data-aos="fade-up" data-aos-duration="500" data-aos-easing="linear">
-              <div class="card__img">
-                <img src="Screenshot_2020-09-15 IPHONE Blush Gold mockup MockupsJar2.png" alt="" />
-              </div>
+              <div class="card__img" style="background-image: url(assets/card-mockup/convert-mockup.png)"></div>
               <div class="card__text">
                 <div class="card__title">Exchange Rates App</div>
                 <div class="card__subtitle">An application that provides up-to-date currency exchange rates using API published by the ECB.</div>
                 <div class="card__btn">
-                  <a id="btn__demo" href="https://blissful-lichterman-7a4b8a.netlify.app/">Demo</a>
-                  <a id="btn__github" href="https://github.com/Deelip7/ExchangeRatesApp">GitHub</a>
+                  <a class="btn__demo" href="https://blissful-lichterman-7a4b8a.netlify.app/">Demo</a>
+                  <a class="btn__github" href="https://github.com/Deelip7/ExchangeRatesApp">GitHub</a>
                 </div>
               </div>
               <div class="card__raindow"></div>
             </div>
 
             <div class="card" data-aos="fade-up">
-              <div class="card__img">
-                <img src="Screenshot_2020-09-15 Chrome Browser Light Design mockup MockupsJar.png" alt="" />
-              </div>
+              <div class="card__img" style="background-image: url(assets/card-mockup/OpenWeatherMap-mockup.png)"></div>
               <div class="card__text">
                 <div class="card__title">OpenWeatherMap</div>
                 <div class="card__subtitle">Simple weather app using OpenWeatherMap API. Provides current weather & forecast for 3 days.</div>
                 <div class="card__btn">
-                  <a id="btn__demo" href="https://frosty-mestorf-016fd6.netlify.app/">Demo</a>
-                  <a id="btn__github" href="https://github.com/Deelip7/weatherAPI">GitHub</a>
+                  <a class="btn__demo" href="https://frosty-mestorf-016fd6.netlify.app/">Demo</a>
+                  <a class="btn__github" href="https://github.com/Deelip7/weatherAPI">GitHub</a>
                 </div>
               </div>
               <div class="card__raindow"></div>
             </div>
 
             <div class="card" data-aos="fade-up" data-aos-duration="500" data-aos-easing="linear">
-              <div class="card__img">
-                <img src="Capture22.PNG" alt="" />
-              </div>
+              <div class="card__img" style="background-image: url(assets/card-mockup/Capture22.PNG)"></div>
               <div class="card__text">
                 <div class="card__title">Shopping Cart App</div>
                 <div class="card__subtitle">Shopping cart app that let you dynamically add, remove and update the cart items using pure JS.</div>
                 <div class="card__btn">
-                  <a id="btn__demo" href="https://loving-gates-50dcae.netlify.app/">Demo</a>
-                  <a id="btn__github" href="https://github.com/Deelip7/shopping-cart">GitHub</a>
+                  <a class="btn__demo" href="https://loving-gates-50dcae.netlify.app/">Demo</a>
+                  <a class="btn__github" href="https://github.com/Deelip7/shopping-cart">GitHub</a>
                 </div>
               </div>
               <div class="card__raindow"></div>
             </div>
 
             <div class="card" data-aos="fade-up" data-aos-duration="1200">
-              <div class="card__img">
-                <img src="Screenshot_2020-09-15 Free Safari Web Browser 1 Trans mockup MockupsJar.png" alt="" />
-              </div>
+              <div class="card__img" style="background-image: url(assets/card-mockup/game-mockup.png)"></div>
               <div class="card__text">
                 <div class="card__title">Unity Roll-a-ball Game</div>
                 <div class="card__subtitle">Simple Roll-a-ball game build in Unity game engine and C++</div>
                 <div class="card__btn">
-                  <a id="btn__demo" href="https://deelip7.github.io/UnityRollarBall/">Demo</a>
-                  <a id="btn__github" href="https://github.com/Deelip7/UnityRollarBall">GitHub</a>
+                  <a class="btn__demo" href="https://deelip7.github.io/UnityRollarBall/">Demo</a>
+                  <a class="btn__github" href="https://github.com/Deelip7/UnityRollarBall">GitHub</a>
                 </div>
               </div>
               <div class="card__raindow"></div>
@@ -177,10 +159,13 @@
               <p>I'd love to hear your thoughts!</p>
             </div>
             <div class="contact-info">
-              <div><img src="/assets/map-pin.svg" alt="" /> <a href="mailto:theelipan@gmail.com" class="contact-info__email"> Theelipan@gmail.com</a></div>
+              <div>
+                <img src="/assets/icons/map-pin.svg" alt="" />
+                <a href="mailto:theelipan@gmail.com" class="contact-info__email"> Theelipan@gmail.com</a>
+              </div>
               <div class="contact-info__location">
                 <div>
-                  <img src="/assets/mail.svg" alt="" />
+                  <img src="/assets/icons/mail.svg" alt="" />
                   <p>Middletown, Connecticut</p>
                 </div>
               </div>
@@ -188,16 +173,13 @@
 
             <div class="contact-icon-wrapper">
               <a href="https://github.com/Deelip7" aria-label="Github profile">
-                <!-- <img class="hexagon2" src="assets/iconsHex/GitHub.svg" /> -->
-                <img class="contact-icon" src="assets/github-sm.svg" alt="Github logo" />
+                <img class="contact-icon" src="assets/icons/github-sm.svg" alt="Github logo" />
               </a>
               <a href="https://www.linkedin.com/in/theelipan-prabakar-096437199/" aria-label="linkedin profile">
-                <!-- <img class="hexagon2" src="assets/iconsHex/LinkedIn.svg" /> -->
-                <img class="contact-icon" src="assets/linkedin-sm.svg" alt="LinkedIn logo" />
+                <img class="contact-icon" src="assets/icons/linkedin-sm.svg" alt="LinkedIn logo" />
               </a>
               <a href="https://codepen.io/deelip7" aria-label="Codepen profile">
-                <!-- <img class="hexagon2" src="assets/iconsHex/Codepen.svg" /> -->
-                <img class="contact-icon" src="assets/codepen-sm2.svg" alt="Codepen logo" />
+                <img class="contact-icon" src="assets/icons/codepen-sm.svg" alt="Codepen logo" />
               </a>
             </div>
             <div class="contact__raindow"></div>
