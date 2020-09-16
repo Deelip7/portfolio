@@ -19,6 +19,8 @@
             <li><a href="#projects" class="navbar__nav --navleft">Projects</a></li>
             <li><a href="#contact-me" class="navbar__nav --navright --close">Contact</a></li>
             <li><a href="#" class="navbar__nav --navright">Resume</a></li>
+            <li><a href="#" class="navbar__nav --navright" id="theme-switch">🌙</a></li>
+            <!-- <li><a href="#" class="navbar__nav --navright">☀️</a></li> -->
           </ul>
         </nav>
         <div class="nav__raindow"></div>
@@ -40,12 +42,12 @@
           </div>
         </section>
         <!-- ---------------------------- Card ---------------------------- -->
-        <section id="projects" data-aos="fade-up" data-aos-duration="1200" data-aos-offset="250">
+        <section id="projects" data-aos="fade-up" data-aos-duration="1200" data-aos-offset="350">
           <header>
             <h2>Projects</h2>
           </header>
-          <div class="card-container">
-            <div class="card transitions data-aos="fade-up"">
+          <div class="card-container" data-aos="fade-up">
+            <div class="card transitions">
               <div class="card__img" style="background-image: url(assets/card-mockup/recipe-mockup.png)"></div>
               <div class="card__text">
                 <div class="card__title">Recipe Finder</div>
@@ -193,6 +195,7 @@
     </div>
     <!------------------------------ Animate On Scroll Library ------------------------------>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="index.js"></script>
     <script>
       AOS.init({
         offset: 150,
