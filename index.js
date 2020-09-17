@@ -4,5 +4,12 @@ let remove = document.documentElement.style;
 
 themeSwitch.addEventListener("click", (e) => {
   document.body.classList.toggle("dark");
-  e.target.innerText === "🌙" ? (themeSwitch.innerText = "☀️") : (themeSwitch.innerText = "🌙");
+
+  if (e.target.innerText === "🌙") {
+    themeSwitch.innerText = "☀️";
+    document.querySelector(".navbar__logo").src = "assets/iconsHex/nav-logo-dark.png";
+  } else {
+    themeSwitch.innerText = "🌙";
+    document.querySelector(".navbar__logo").src = "assets/iconsHex/nav-logo.png";
+  }
 });

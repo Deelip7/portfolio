@@ -98,7 +98,7 @@ a:hover {
 .navbar {
   display: flex;
   flex-direction: row;
-  padding: 1rem 10rem;
+  padding: 1rem 5rem;
   justify-content: flex-end;
 }
 
@@ -106,34 +106,34 @@ a:hover {
   position: absolute;
   width: 4.5rem;
   left: 10rem;
-  top: 1.1rem;
+  top: 0.99rem;
+  filter: brightness(1) contrast(1);
 }
 
 .navbar__nav {
-  color: var(--btn-border);
   margin: 0 1.5rem;
+  color: var(--btn-border);
 }
 
 .navbar__nav {
-  display: inline-block;
   padding: 12px 0;
   position: relative;
+  display: inline-block;
 }
 
 .navbar__nav:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
   position: absolute;
-  background: var(--subtext);
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  display: block;
+  content: "";
   width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 1px;
+  background: var(--btn-hover);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 
-.navbar__nav:hover:after {
+.navbar__nav:not(#theme-switch):hover:after {
   width: 100%;
   left: 0;
 }
