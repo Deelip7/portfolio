@@ -3,13 +3,13 @@ let set = document.documentElement.style;
 let remove = document.documentElement.style;
 
 themeSwitch.addEventListener("click", (e) => {
+  logoTransition();
   document.body.classList.toggle("dark");
-
-  if (e.target.innerText === "🌙") {
-    themeSwitch.innerText = "☀️";
-    document.querySelector(".navbar__logo").src = "assets/iconsHex/nav-logo-dark.png";
-  } else {
-    themeSwitch.innerText = "🌙";
-    document.querySelector(".navbar__logo").src = "assets/iconsHex/nav-logo.png";
-  }
+  e.target.innerText === "🌙" ? (themeSwitch.innerText = "☀️") : (themeSwitch.innerText = "🌙");
 });
+
+function logoTransition() {
+  document.querySelectorAll(".navbar__logo").forEach((e) => {
+    e.classList.toggle("hidden");
+  });
+}
