@@ -327,7 +327,7 @@ section {
   flex-flow: row wrap;
   font-weight: 100;
   font-size: 0.8rem;
-  margin-bottom: 0.6rem;
+  margin: 0.6rem 0;
   color: var(--subtext);
   overflow: hidden;
 }
@@ -337,12 +337,14 @@ section {
   padding: 0;
 }
 .card__tools > li {
-  list-style: circle;
-  margin-right: 1.5rem;
+  list-style: "|";
+  padding: 0 0.6rem;
 }
 
 .card__tools > li:first-child {
-  /* list-style: none; */
+  list-style: none;
+  padding-left: 0rem !important;
+  padding-right: 0.8rem !important;
 }
 
 .card__subtitle {
@@ -578,6 +580,11 @@ footer {
     padding: 0.5rem 2rem;
   }
 
+  .card__tools > li {
+    list-style: "|";
+    padding: 0 0.4rem;
+  }
+
   .card__raindow {
     height: 1px;
   }
@@ -625,5 +632,25 @@ footer {
 
   .raindow {
     height: 2px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .navbar__nav {
+    margin: 0 1rem;
+  }
+
+  .btn__github,
+  .btn__demo {
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+  }
+  .contact-icon-wrapper .contact-icon {
+    width: 75px;
+    margin-right: 0.1rem;
+  }
+  .contact-info,
+  .contact {
+    font-size: 0.9rem;
   }
 }

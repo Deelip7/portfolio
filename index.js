@@ -1,13 +1,5 @@
 let themeSwitch = document.querySelector("#theme-switch");
 
-themeSwitch.addEventListener("click", (e) => {
-  if (e.target.innerText === "🌙") {
-    getPreference("dark");
-  } else if (e.target.innerText === "☀️") {
-    getPreference("light");
-  }
-});
-
 (function () {
   const savedTheme = localStorage.getItem("theme");
   if (localStorage.length === 0) {
@@ -16,6 +8,14 @@ themeSwitch.addEventListener("click", (e) => {
     getPreference(savedTheme);
   }
 })();
+
+themeSwitch.addEventListener("click", (e) => {
+  if (e.target.innerText === "🌙") {
+    getPreference("dark");
+  } else if (e.target.innerText === "☀️") {
+    getPreference("light");
+  }
+});
 
 function getPreference(mode) {
   localStorage.setItem("theme", mode);
@@ -35,11 +35,13 @@ function setPreference(theme) {
 }
 
 function logoTransition(theme) {
-  const logoTheme = document.querySelectorAll(".navbar__logo")[1];
-  console.log(theme);
+  const logoTheme1 = document.querySelectorAll(".navbar__logo")[0];
+  const logoTheme2 = document.querySelectorAll(".navbar__logo")[1];
   if (theme === "dark") {
-    logoTheme.classList.remove("hidden");
+    logoTheme1.classList.add("hidden");
+    logoTheme2.classList.remove("hidden");
   } else {
-    logoTheme.classList.add("hidden");
+    logoTheme1.classList.remove("hidden");
+    logoTheme2.classList.add("hidden");
   }
 }
