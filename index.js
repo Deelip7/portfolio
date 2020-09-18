@@ -1,15 +1,45 @@
 let themeSwitch = document.querySelector("#theme-switch");
-let set = document.documentElement.style;
-let remove = document.documentElement.style;
 
 themeSwitch.addEventListener("click", (e) => {
-  logoTransition();
-  document.body.classList.toggle("dark");
-  e.target.innerText === "🌙" ? (themeSwitch.innerText = "☀️") : (themeSwitch.innerText = "🌙");
+  if (e.target.innerText === "🌙") {
+    getPreference("dark");
+  } else if (e.target.innerText === "☀️") {
+    getPreference("light");
+  }
 });
 
-function logoTransition() {
-  document.querySelectorAll(".navbar__logo").forEach((e) => {
-    e.classList.toggle("hidden");
-  });
+(function () {
+  const savedTheme = localStorage.getItem("theme");
+  if (localStorage.length === 0) {
+    getPreference("light");
+  } else {
+    getPreference(savedTheme);
+  }
+})();
+
+function getPreference(mode) {
+  localStorage.setItem("theme", mode);
+  const theme = localStorage.getItem("theme");
+  setPreference(theme);
+  logoTransition(theme);
+}
+
+function setPreference(theme) {
+  if (theme === "light") {
+    themeSwitch.innerText = "🌙";
+    document.body.className = theme;
+  } else {
+    themeSwitch.innerText = "☀️";
+    document.body.className = theme;
+  }
+}
+
+function logoTransition(theme) {
+  const logoTheme = document.querySelectorAll(".navbar__logo")[1];
+  console.log(theme);
+  if (theme === "dark") {
+    logoTheme.classList.remove("hidden");
+  } else {
+    logoTheme.classList.add("hidden");
+  }
 }

@@ -24,7 +24,7 @@ body {
   color: var(--header);
   font-family: "Noto Sans KR", sans-serif;
   background-color: var(--bg);
-  transition: all 800ms;
+  transition: all 500ms;
 }
 
 body * img {
@@ -324,17 +324,25 @@ section {
 
 .card__tools {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   font-weight: 100;
   font-size: 0.8rem;
   margin-bottom: 0.6rem;
-  padding: 0 1rem;
   color: var(--subtext);
+  overflow: hidden;
 }
 
+.card__tools ul {
+  margin: 0;
+  padding: 0;
+}
 .card__tools > li {
   list-style: circle;
   margin-right: 1.5rem;
+}
+
+.card__tools > li:first-child {
+  /* list-style: none; */
 }
 
 .card__subtitle {
@@ -564,10 +572,6 @@ footer {
   .card {
     margin: 1rem 2rem;
     height: 450px;
-  }
-
-  .card__img {
-    height: 50%;
   }
 
   .card__text {
