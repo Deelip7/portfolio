@@ -21,7 +21,7 @@ function getPreference(mode) {
   localStorage.setItem("theme", mode);
   const theme = localStorage.getItem("theme");
   setPreference(theme);
-  logoTransition(theme);
+  // logoTransition(theme);
 }
 
 function setPreference(theme) {
@@ -34,14 +34,14 @@ function setPreference(theme) {
   }
 }
 
-function logoTransition(theme) {
-  const logoTheme1 = document.querySelectorAll(".navbar__logo")[0];
-  const logoTheme2 = document.querySelectorAll(".navbar__logo")[1];
-  if (theme === "dark") {
-    logoTheme1.classList.add("hidden");
-    logoTheme2.classList.remove("hidden");
-  } else {
-    logoTheme1.classList.remove("hidden");
-    logoTheme2.classList.add("hidden");
-  }
-}
+// function logoTransition(theme) {
+//   const logoTheme1 = document.querySelectorAll(".navbar__logo")[0];
+//   const logoTheme2 = document.querySelectorAll(".navbar__logo")[1];
+//   if (theme === "dark") {
+//     logoTheme1.classList.add("hidden");
+//     logoTheme2.classList.remove("hidden");
+//   } else {
+//     logoTheme1.classList.remove("hidden");
+//     logoTheme2.classList.add("hidden");
+//   }
+// }
