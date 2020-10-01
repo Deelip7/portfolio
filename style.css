@@ -158,6 +158,7 @@ h2 {
   text-align: center;
   letter-spacing: 0.2rem;
   color: var(--header);
+  /* font-size: calc(.9rem + .9vmax); */
 }
 
 h2 {
@@ -179,7 +180,7 @@ h3 {
 
 section {
   display: flex;
-  min-height: 100vh;
+  min-height: 90vh;
   flex-flow: column;
   justify-content: center;
 }
@@ -191,13 +192,14 @@ section {
 }
 
 .about-content > p {
-  max-width: 720px;
+  max-width: 75ch;
   line-height: 2.5rem;
+  /* font-size: calc(1rem + 0.1vw); */
   color: var(--subtext);
 }
 
 .about-content > * {
-  padding-bottom: 1rem;
+  padding-bottom: 1.1rem;
 }
 
 .about-content > img {
@@ -275,6 +277,7 @@ section {
   flex-flow: row wrap;
   align-self: center;
   justify-content: center;
+  gap: 3vmax 2.5vmax;
 }
 
 .card {
@@ -283,8 +286,9 @@ section {
   justify-content: space-between;
   align-self: center;
   max-width: 450px;
-  height: 500px;
-  margin: 2rem 2rem;
+  height: 30rem;
+  /* height: 500px; */
+  /* margin: 2rem 2rem; */
   background-color: var(--card-bg);
   box-shadow: var(--card-shadow);
   border-radius: var(--border-radius-two);
@@ -347,8 +351,8 @@ section {
 
 .card__subtitle {
   font-weight: 100;
-  line-height: 22px;
-  font-size: 0.8rem;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
   margin-bottom: 2rem;
   color: var(--subtext);
 }
@@ -362,8 +366,8 @@ section {
   font-weight: 100;
   display: inline-block;
   font-size: 0.9rem;
-  margin-right: 1rem;
-  padding: 0.5rem 1rem;
+  margin-right: 1em;
+  padding: 0.5em 1em;
   color: var(--btn);
   border: var(--btn-border);
   border-radius: var(--border-radius);
@@ -382,7 +386,7 @@ section {
 .card__raindow {
   align-self: center;
   width: 90%;
-  height: 0.9px;
+  height: 1px;
   background: var(--rainbow-bg-color);
   filter: var(--image-filter);
 }
@@ -512,7 +516,7 @@ svg {
 .contact__raindow {
   position: relative;
   top: 16px;
-  height: 0.5px;
+  height: 0.9px;
   width: 90%;
   background: var(--rainbow-bg-color);
   align-self: center;
@@ -565,9 +569,12 @@ footer {
     font-size: 0.9rem;
   }
 
+  .card-container {
+    gap: 0;
+  }
   .card {
-    margin: 1rem 2rem;
-    height: 450px;
+    margin: 1rem;
+    /* height: 450px; */
   }
 
   .card__tools > li {
