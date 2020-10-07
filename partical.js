@@ -1,18 +1,8 @@
 // ThreeJs custom waves
 // Original script by ThreeJS : https://threejs.org/examples/canvas_particles_waves.html
 
-// const theme = localStorage.getItem("theme");
-
-// console.log(theme);
-
-// if (theme == "light") {
-//   bgColor = 0xffffff;
-// } else {
-//   bgColor = 0x00000;
-// }
-
 var SEPARATION = 50,
-  AMOUNTX = 100,
+  AMOUNTX = 130,
   AMOUNTY = 30;
 
 var container;
@@ -33,11 +23,11 @@ function init() {
     container.className += container.className ? " waves" : "waves";
   }
 
-  camera = new THREE.PerspectiveCamera(120, window.innerWidth / window.innerHeight, 1, 10000);
+  camera = new THREE.PerspectiveCamera(135, window.innerWidth / window.innerHeight, 1, 10000);
   camera.position.y = 180; //changes how far back you can see i.e the particles towards horizon
   camera.position.z = 20; //This is how close or far the particles are seen
 
-  camera.rotation.x = 0.35;
+  camera.rotation.x = 0.13;
 
   scene = new THREE.Scene();
 
@@ -95,7 +85,7 @@ function render() {
     for (var iy = 0; iy < AMOUNTY; iy++) {
       particle = particles[i++];
       particle.position.y = Math.sin((ix + count) * 0.5) * 15 + Math.sin((iy + count) * 0.5) * 15;
-      particle.scale.x = particle.scale.y = (Math.sin((ix + count) * 0.5) + 2) * 4;
+      particle.scale.x = particle.scale.y = (Math.sin((ix + count) * 0.5) + 2) * 3;
       // + (Math.sin((iy + count) * 0.5) + 1) * 4;
     }
   }
@@ -103,5 +93,5 @@ function render() {
   renderer.render(scene, camera);
 
   // This increases or decreases speed
-  count += 0.01;
+  count += 0.008;
 }

@@ -4,7 +4,7 @@
   ];
   _0xbf34[0];
 
-  const API_KEY = _0xbf34[0];
+  const API_KEYa = _0xbf34[0];
   fetch(API_KEY)
     .then((res) => res.json())
     .then((data) => {
